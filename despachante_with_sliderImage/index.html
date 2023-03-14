@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com  -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Image Slider</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/navbar.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    
+    
+    <nav class="navbar">
+      <div class="logo">
+          <h4>DESPACHANTE</h4>
+      </div>
+      <ul class="menu">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">SOBRE</a></li>
+          <li><a href="#">COMPRE</a></li>
+          <li><a href="">ASSESSORIA</a></li>
+          <li><a href="">CONTATO</a></li>
+      </ul>
+      <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+      </div>
+  </nav>
+
+        
+    
+    <section class="main swiper mySwiper">
+      <div class="wrapper swiper-wrapper">
+        <div class="slide swiper-slide">
+          <img src="images/img 1.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Melhor Servico de Despachante.</span>
+            <h2>
+              Enjoy Our Exclusive <br />
+              Gun 
+            </h2>
+            <a href="#" class="button">About Us</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="images/img 2.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">make dreams come true</span>
+            <h2>
+              make dreams come true <br />
+              make dreams come true
+            </h2>
+            <a href="#" class="button">About Us</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="images/img 2.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Recarregue suas energias</span>
+            <h2>
+              Recarregue suas energias <br />
+              ou sua arma
+            </h2>
+            <a href="#" class="button">About Us</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <!--JS -->
+    <script src="JS/swiper-bundle.min.js"></script>
+    <script src="./JS/nav.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
