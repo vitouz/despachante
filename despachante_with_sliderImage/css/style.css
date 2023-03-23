@@ -8,9 +8,8 @@
   font-family: "Poppins", sans-serif;
 }
 .main {
-  margin-top: 9%;
-  height: 50vh;
-  width: 60%;
+  height: 100vh;
+  width: 100%;
 }
 .wrapper,
 .slide {
@@ -103,8 +102,7 @@ a.button:hover {
 
 @media screen and (max-width: 768px) {
   .main {
-    
-    margin: 0px;
+    margin-bottom: 30vh;
   }
   
   .nav-btn {
