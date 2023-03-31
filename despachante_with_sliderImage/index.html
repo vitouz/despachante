@@ -102,7 +102,7 @@
     <!--JS -->
     <script src="JS/swiper-bundle.min.js"></script>
     <script src="./JS/nav.js"></script>
-    <script src="./JS/autoplay.js"></script>
+    <!-- <script src="./JS/autoplay.js"></script> -->
 
     <!-- Initialize Swiper -->
     <script>
@@ -112,6 +112,12 @@
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
+        
+          enable: true,
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
         },
         navigation: {
           nextEl: ".swiper-button-next",
