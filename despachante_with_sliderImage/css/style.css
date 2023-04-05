@@ -42,6 +42,15 @@
   width: 100%;
   z-index: 100;
 }
+
+.slide .image-data .text {
+  transform: translateY(0);
+  opacity: 1;
+  transition: 1s ease;
+  transition-delay: 0.3s;
+  transition-property: transform, opacity;
+}
+
 .image-data span.text {
   font-size: 4rem;
   font-weight: 900;
