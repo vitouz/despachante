@@ -45,3 +45,10 @@
     padding: 1rem #eee;
     line-height: 1.8;
 }
+
+@media screen and (max-width: 768px) {
+.about .row .img img{
+    padding-right: 2rem;
+    align-items: center;
+}
+}
